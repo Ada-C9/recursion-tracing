@@ -15,6 +15,8 @@ def mystery2(n)
   end
 end
 
+puts mystery2(-123)
+
 def mystery3(n)
   if n == 0
     return 100
