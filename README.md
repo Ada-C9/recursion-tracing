@@ -1,14 +1,14 @@
 # Recursion Problems
 
 ## Definitions
-Define the following: 
-- Recursion
-- Recursive Case
-- Base Case
-- Activation Chain/Function Call Stack
-- Activation Record/Function Call
-- Infinite Recursion/Stack Overflow/Stack too deep
-- Tail Recursion
+Define the following:
+- Recursion - Recursion occurs when a method calls itself. A recursive algorithm always has a base case and a recursive case.
+- Recursive Case - Each recursive call gets you closer to a problem scope for which an answer is known.
+- Base Case - A base case is the point at which the recursive calls stop. The returned value can then be returned back to the previous calls.
+- Activation Chain/Function Call Stack - Each function call is added to the call stack which takes space in the stack memory.
+- Activation Record/Function Call - An activation record is each individual function call that was made.
+- Infinite Recursion/Stack Overflow/Stack too deep - This happens when a base case is not defined. The recursive algorithm keeps on making recursive calls which are added to the stack memory which eventually overflows.
+- Tail Recursion - A algorithm with tail recursion returns the value immediately and does not need to do any additional computation.
 
 ## Tracing through a recursive method. Time & Space complexity.
 ### Trace #1
@@ -22,11 +22,11 @@ def mystery1(n)
 end
 ```
 
-- What is mystery1(5)?
-- What is mystery1(10)?
-- What is mystery1(0)?
-- What is the time complexity of mystery1(n)?
-- What is the space complexity of mystery1(n)?
+- What is mystery1(5)? --> 15
+- What is mystery1(10)? --> 55
+- What is mystery1(0)? --> stack overflow - infinity loop
+- What is the time complexity of mystery1(n)? O(n)
+- What is the space complexity of mystery1(n)? O(n)
 
 ### Trace #2
 ```ruby
@@ -39,11 +39,11 @@ def mystery2(n)
 end
 ```
 
-- What is mystery2(123)?
-- What is mystery2(9005)?
-- What is mystery2(-123)?
-- What is the time complexity of mystery2(n)?
-- What is the space complexity of mystery2(n)?
+- What is mystery2(123)? --> 6
+- What is mystery2(9005)? --> 14
+- What is mystery2(-123)? --> -123
+- What is the time complexity of mystery2(n)? O(n)
+- What is the space complexity of mystery2(n)? O(n)
 - _Added Fun: How could we make `mystery2(-123)` work the way we might expect it to work instead of the way it does?_
 
 ### Trace #3
@@ -62,11 +62,11 @@ def mystery3(n)
 end
 ```
 
-- What is mystery3(1)?
-- What is mystery3(13)?
-- What is mystery3(-6)?
-- What is the time complexity of mystery3(n)?
-- What is the space complexity of mystery3(n)?
+- What is mystery3(1)? --> 100
+- What is mystery3(13)? --> 100
+- What is mystery3(-6)? --> 200
+- What is the time complexity of mystery3(n)? O(abs(n)/2)
+- What is the space complexity of mystery3(n)? O(abs(n)/2)
 
 ### Trace #4
 ```ruby
@@ -79,11 +79,11 @@ def mystery4(b, e)
 end
 ```
 
-- What is mystery4(10, 2)?
-- What is mystery4(4, 3)?
-- What is mystery4(5, 0)?
-- What is the time complexity of mystery4(b, e)?
-- What is the space complexity of mystery4(b, e)?
+- What is mystery4(10, 2)? --> 100
+- What is mystery4(4, 3)? --> 64
+- What is mystery4(5, 0)? --> 1
+- What is the time complexity of mystery4(b, e)? O(e)
+- What is the space complexity of mystery4(b, e)? O(e)
 
 ### Trace #5
 ```ruby
@@ -96,11 +96,11 @@ def mystery5(s)
 end
 ```
 
-- What is mystery5("hi")?
-- What is mystery5("")?
-- What is mystery5("Hi, there!")?
-- What is the time complexity of mystery5(s)?
-- What is the space complexity of mystery5(s)?
+- What is mystery5("hi")? --> "**"
+- What is mystery5("")? --> ""
+- What is mystery5("Hi, there!")? "**********"
+- What is the time complexity of mystery5(s)? --> O(n)
+- What is the space complexity of mystery5(s)? --> O(n)
 - _Added Fun: How could we make only alphabetic characters to be changed to stars?_
 
 ### Trace #6
@@ -118,11 +118,11 @@ def mystery6(s)
 end
 ```
 
-- What is mystery6("goodnight moon")?
-- What is mystery6("Ada Developers Academy")?
-- What is mystery6("Hi, there!")?
-- What is the time complexity of mystery6(s)?
-- What is the space complexity of mystery6(s)?
+- What is mystery6("goodnight moon")? --> "moon goodnight"
+- What is mystery6("Ada Developers Academy")? --> "Academy Developers Ada"
+- What is mystery6("Hi, there!")? --> "there! Hi,"
+- What is the time complexity of mystery6(s)? O(n)
+- What is the space complexity of mystery6(s)? O(n)
 - _Added Fun: How could we make the reversal happen by letter, instead of by word (i.e. Make it so that mystery6("goodnight moon") returned "noom thgindoog")?_
 
 ### Trace #7
@@ -138,8 +138,8 @@ def mystery7(word)
 end
 ```
 
-- What is mystery7("cupcake")?
-- What is mystery7("detected")?
-- What is mystery7("eye")?
-- What is the time complexity of mystery7(word)?
-- What is the space complexity of mystery7(word)?
+- What is mystery7("cupcake")? --> false
+- What is mystery7("detected")? --> false
+- What is mystery7("eye")? --> true
+- What is the time complexity of mystery7(word)? O(n/2)
+- What is the space complexity of mystery7(word)? O(n/2)
