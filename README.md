@@ -13,7 +13,7 @@ Define the following:
 ![page one](recursion-tracing/CSFun.png)
 
 
-[[https://github.com/kschumy/recursion-tracing/blob/master/CSFun.png|alt=one]]
+[https://github.com/kschumy/recursion-tracing/blob/master/CSFun.png|alt=one]
 
 
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
