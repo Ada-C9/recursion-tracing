@@ -10,10 +10,8 @@ Define the following:
 - Infinite Recursion/Stack Overflow/Stack too deep: when there is no basecase to pull you out of a recursive method. Your computer runs out of available memory in the stack
 - Tail Recursion: computation before recursion. Can be better for memory management.
 
-![page one](recursion-tracing/CSFun.png)
-
-
 ![one](https://github.com/kschumy/recursion-tracing/blob/master/CSFun.png)
 
+![two](https://github.com/kschumy/recursion-tracing/blob/master/CSFun2.png)
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![three](https://github.com/kschumy/recursion-tracing/blob/master/CSFun3.png)
